@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melanie Li Research — Cantonese Creator Dashboard</title>
+<style>
+  :root { --bg:#0f1115; --card:#171b22; --border:#262c36; --text:#e8eaed; --muted:#9aa3b2; --accent:#f0b429; --accent2:#e2603f; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.55; padding:24px; max-width:1180px; margin:0 auto; }
+  header { margin-bottom:28px; }
+  header h1 { font-size:28px; letter-spacing:-.5px; }
+  header h1 span { color:var(--accent); }
+  header p { color:var(--muted); margin-top:6px; }
+  .updated { display:inline-block; margin-top:10px; font-size:13px; color:var(--muted); background:var(--card); border:1px solid var(--border); padding:4px 12px; border-radius:20px; }
+  section { margin-bottom:36px; }
+  h2 { font-size:20px; margin-bottom:14px; padding-bottom:8px; border-bottom:2px solid var(--accent); display:inline-block; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:14px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px; }
+  .card h3 { font-size:16px; margin-bottom:4px; }
+  .card h3 a { color:var(--text); text-decoration:none; }
+  .card h3 a:hover { color:var(--accent); }
+  .meta { font-size:13px; color:var(--muted); margin-bottom:8px; }
+  .badge { display:inline-block; font-size:11px; font-weight:700; background:#1d3a24; color:#7ee2a0; border-radius:6px; padding:1px 7px; margin-left:6px; vertical-align:middle; }
+  .followers { font-size:22px; font-weight:700; color:var(--accent); }
+  .followers small { font-size:12px; color:var(--muted); font-weight:400; }
+  .niche { font-size:13px; color:var(--accent2); font-weight:600; margin:6px 0 4px; }
+  .rel { font-size:14px; color:var(--muted); }
+  .hero { background:linear-gradient(135deg,#1c1a12,#171b22); border:1px solid var(--accent); border-radius:14px; padding:22px; display:flex; gap:24px; flex-wrap:wrap; align-items:center; }
+  .hero .big { font-size:34px; font-weight:800; color:var(--accent); }
+  .hero .lbl { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; }
+  .hero .bio { font-size:14px; color:var(--muted); margin-top:6px; white-space:pre-line; }
+  .idea { border-left:3px solid var(--accent); padding:10px 14px; background:var(--card); border-radius:0 10px 10px 0; margin-bottom:12px; }
+  .idea h3 { font-size:16px; margin-bottom:4px; }
+  .idea .hook { font-size:14px; }
+  .idea .why { font-size:13px; color:var(--muted); margin-top:4px; font-style:italic; }
+  .trend { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:14px 16px; margin-bottom:10px; }
+  .trend .date { font-size:12px; color:var(--accent); font-weight:700; text-transform:uppercase; letter-spacing:1px; }
+  .trend li { margin:8px 0 8px 18px; font-size:14px; }
+  .trend li a { color:#7db4ff; }
+  .trend .note { color:var(--muted); font-size:13px; }
+  a { color:#7db4ff; }
+  footer { color:var(--muted); font-size:12px; margin-top:40px; padding-top:16px; border-top:1px solid var(--border); }
+  .err { background:#3a1d1d; border:1px solid #7a2e2e; padding:16px; border-radius:10px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🍈 <span>Melanie Li</span> Research Dashboard</h1>
+  <p>Cantonese American creator landscape — similar creators, viral formats, and content ideas. Refreshes weekly.</p>
+  <div class="updated" id="updated">Loading…</div>
+</header>
+
+<section>
+  <h2>Subject</h2>
+  <div class="hero" id="melanie"></div>
+</section>
+
+<section>
+  <h2>Creator Watchlist</h2>
+  <div class="cards" id="creators"></div>
+</section>
+
+<section>
+  <h2>Viral Formats</h2>
+  <div class="cards" id="formats"></div>
+</section>
+
+<section>
+  <h2>Video Ideas for Melanie</h2>
+  <div id="ideas"></div>
+</section>
+
+<section>
+  <h2>Weekly Trend Watch</h2>
+  <div id="trends"></div>
+</section>
+
+<footer>Data: Instagram public profiles via connected account · Social listening across Instagram/Facebook · Regenerated weekly by an automated job. Follower counts are point-in-time snapshots.</footer>
+
+<script>
+const fmt = n => n == null ? "—" : n >= 1e6 ? (n/1e6).toFixed(2)+"M" : n >= 1e3 ? (n/1e3).toFixed(1)+"K" : String(n);
+
+fetch("data.json").then(r => r.json()).then(d => {
+  document.getElementById("updated").textContent = "Last updated " + new Date(d.updated_at).toLocaleString();
+
+  const m = d.melanie;
+  document.getElementById("melanie").innerHTML =
+    `<div><div class="big">${fmt(m.followers)}</div><div class="lbl">followers</div></div>
+     <div><div class="big">${m.posts ?? "—"}</div><div class="lbl">posts</div></div>
+     <div style="flex:1;min-width:240px"><h3><a href="${m.profile_url}" target="_blank" rel="noopener">@${m.username}</a> — ${m.name}</h3>
+     <div class="bio">${m.bio}</div></div>`;
+
+  document.getElementById("creators").innerHTML = d.creators.map(c =>
+    `<div class="card"><h3><a href="${c.profile_url}" target="_blank" rel="noopener">@${c.username}</a>${c.verified ? '<span class="badge">✓</span>' : ""}</h3>
+     <div class="followers">${fmt(c.followers)} <small>followers</small></div>
+     <div class="niche">${c.niche}</div>
+     <div class="rel">${c.relevance}</div></div>`).join("");
+
+  document.getElementById("formats").innerHTML = d.formats.map(f =>
+    `<div class="card"><h3>${f.name}</h3><div class="rel">${f.description}</div>
+     <div class="meta" style="margin-top:8px">Example: <a href="${f.example_url}" target="_blank" rel="noopener">${f.example_label}</a></div></div>`).join("");
+
+  document.getElementById("ideas").innerHTML = d.ideas.map((g,i) =>
+    `<div class="idea"><h3>${i+1}. ${g.title}</h3><div class="hook">${g.hook}</div><div class="why">${g.why}</div></div>`).join("");
+
+  document.getElementById("trends").innerHTML = d.trends.map(t =>
+    `<div class="trend"><div class="date">${t.date}</div><ul>` +
+    t.items.map(it => `<li><a href="${it.url}" target="_blank" rel="noopener">${it.label}</a><div class="note">${it.note}</div></li>`).join("") +
+    `</ul></div>`).join("");
+}).catch(e => {
+  document.body.insertAdjacentHTML("afterbegin", `<div class="err">Could not load data.json — ${e}</div>`);
+});
+</script>
+</body>
+</html>
