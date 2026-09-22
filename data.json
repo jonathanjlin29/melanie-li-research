@@ -1,0 +1,194 @@
+{
+  "updated_at": "2026-09-22T19:10:07.206822+00:00",
+  "melanie": {
+    "username": "melanie_li",
+    "name": "Melanie Li",
+    "followers": 31947,
+    "following": 1760,
+    "posts": 361,
+    "bio": "🍈probably cooking something\n💌contact.melanie.stride@gmail.com\n📍bay area, ca",
+    "profile_url": "https://www.instagram.com/melanie_li"
+  },
+  "creators": [
+    {
+      "username": "thestevenhe",
+      "name": "Steven He",
+      "followers": 5873966,
+      "verified": true,
+      "niche": "Asian-dad comedy skits",
+      "relevance": "Master of the two-role parent-comparison skit; the format to study for scripted bits.",
+      "profile_url": "https://www.instagram.com/thestevenhe"
+    },
+    {
+      "username": "jimmyoyang",
+      "name": "Jimmy O Yang 歐陽萬成",
+      "followers": 3728405,
+      "verified": true,
+      "niche": "HK-born stand-up",
+      "relevance": "Cantonese-cussing bit is his most clipped segment; proof language humor travels.",
+      "profile_url": "https://www.instagram.com/jimmyoyang"
+    },
+    {
+      "username": "jlouofficial",
+      "name": "J Lou 林欣",
+      "followers": 862898,
+      "verified": true,
+      "niche": "Multilingual-mom persona skits",
+      "relevance": "Persona-switching (sweet English mom vs. scary Cantonese mom) — template for grandma/granddaughter two-character energy.",
+      "profile_url": "https://www.instagram.com/jlouofficial"
+    },
+    {
+      "username": "iammcjin",
+      "name": "MC Jin",
+      "followers": 561444,
+      "verified": true,
+      "niche": "Rapper / Cantonese storytelling",
+      "relevance": "'My first Cantonese verse' storytelling maps directly to dish-origin stories.",
+      "profile_url": "https://www.instagram.com/iammcjin"
+    },
+    {
+      "username": "esafung",
+      "name": "Esa Fung",
+      "followers": 171885,
+      "verified": true,
+      "niche": "ABC parent comedy",
+      "relevance": "ABC-coded family humor; closest comedic tone reference.",
+      "profile_url": "https://www.instagram.com/esafung"
+    },
+    {
+      "username": "andrew.buoy",
+      "name": "Andrew Buoy",
+      "followers": 129344,
+      "verified": false,
+      "niche": "Cantonese learning journey (SF)",
+      "relevance": "Closest overall match: SF-based, learning Cantonese on camera, films with his grandma, serialized journey format.",
+      "profile_url": "https://www.instagram.com/andrew.buoy"
+    },
+    {
+      "username": "cantotomando",
+      "name": "CantotoMando",
+      "followers": 114925,
+      "verified": false,
+      "niche": "Canto household comedy",
+      "relevance": "'Phrases Canto Moms Say' listicle series; 'Things my Toisan grandma says while I cook' is the untapped variant.",
+      "profile_url": "https://www.instagram.com/cantotomando"
+    },
+    {
+      "username": "davidbfung",
+      "name": "David Fung",
+      "followers": 62798,
+      "verified": true,
+      "niche": "Fung Bros / ABC in Asia",
+      "relevance": "Long-form ABC identity content; audience overlap.",
+      "profile_url": "https://www.instagram.com/davidbfung"
+    },
+    {
+      "username": "matthewpwj_",
+      "name": "MATTHEW",
+      "followers": 52863,
+      "verified": false,
+      "niche": "'Jayden' mum-mock trend",
+      "relevance": "Mixed English-Cantonese mum talk trend; millions of views, brands trendjacked it.",
+      "profile_url": "https://www.instagram.com/matthewpwj_"
+    }
+  ],
+  "formats": [
+    {
+      "name": "Language-gap quiz",
+      "description": "Contestants translate everyday phrases into Cantonese and fail entertainingly. A*Pop's 'Can These Chinese Americans Pass A Basic Cantonese Language Quiz?' runs multi-million views across rounds.",
+      "example_label": "A*Pop Cantonese quiz (45K likes)",
+      "example_url": "https://www.instagram.com/reel/DTTVmJbEg-u/"
+    },
+    {
+      "name": "Parent-comparison two-role skit",
+      "description": "One actor plays both the overbearing Asian parent and the American-raised kid. Steven He's 'How your parents COMPARE you to your cousin' hit ~310K likes.",
+      "example_label": "Steven He cousin-comparison skit",
+      "example_url": "https://www.instagram.com/reel/DYDGyewkna3/"
+    },
+    {
+      "name": "Recurring character",
+      "description": "A signature persona fans quote back. Jake Sing Chan's 'Ni Howdy' (exaggerated American vs. CNY red-envelope exchange) became a catchphrase engine.",
+      "example_label": "'Ni Howdy' CNY skit (76K likes)",
+      "example_url": "https://www.instagram.com/reel/DU3kl6tkfwT/"
+    },
+    {
+      "name": "'Phrases Canto moms say' series",
+      "description": "Serialized listicles of mom-isms. Each entry is a shareable clip and comment bait ('my mom says this too').",
+      "example_label": "CantotoMando 'Signs you grew up in a Canto Household'",
+      "example_url": "https://www.instagram.com/reel/DbqYs6Iz71-/"
+    },
+    {
+      "name": "'Cantonese card revoked'",
+      "description": "Attempt the entire video in Cantonese and fail, with mom roasting off-camera. Relatable incompetence + family comedy.",
+      "example_label": "Eric Ou 'ABC son gets his Cantonese card revoked'",
+      "example_url": "https://www.instagram.com/reel/Db9X_DCJpqc/"
+    },
+    {
+      "name": "Day-N learning journey",
+      "description": "Serialized progress vlogs ('Day 152 of practicing Cantonese'). Builds returning viewers; stakes rise with the count.",
+      "example_label": "Andrew Buoy 'Cantonese & Toisan school for ABCs'",
+      "example_url": "https://www.instagram.com/reel/DbG3WZQP8Ko/"
+    },
+    {
+      "name": "Mixed English-Cantonese mum mock",
+      "description": "Mocking how mums awkwardly force English words into Cantonese sentences ('Jayden, 媽咪 told you 呀, too much 啦'). Went mega-viral in HK; brands trendjacked it.",
+      "example_label": "Marketing-Interactive: the 'Jayden' trend",
+      "example_url": "https://www.marketing-interactive.com/hk-brands-trendjack-jayden-reels-mocking-mixed-english-cantonese-mum-talk"
+    },
+    {
+      "name": "Multilingual persona switch",
+      "description": "One creator, multiple parenting personas toggled by language. J Lou's sweet-English-mom to scary-Cantonese-mom switch is the template.",
+      "example_label": "J Lou multilingual mom skit",
+      "example_url": "https://www.instagram.com/reel/DcN-kQWC5gm/"
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Can my husband pass a Cantonese food vocab quiz?",
+      "hook": "Have him translate zongzi ingredients and dim sum names on camera. The fails are the content.",
+      "why": "Lifts the proven A*Pop quiz format into her husband-wife comedy lane."
+    },
+    {
+      "title": "Things my Toisan grandma says while I cook",
+      "hook": "Serialized listicle; each entry a shareable clip. Comment bait: 'my grandma says this too.'",
+      "why": "CantotoMando's 'Phrases Canto Moms Say' format, but the Toisan-grandma variant is untapped."
+    },
+    {
+      "title": "Day N of learning grandma's recipes before they're gone",
+      "hook": "Serialized journey with emotional stakes; recipe-preservation content gets saved and shared hard.",
+      "why": "Andrew Buoy's journey format with higher emotional stakes."
+    },
+    {
+      "title": "Your grandma was doing wellness before it was cool",
+      "hook": "Cantonese soups reframed as the original gut-health / depuff trend, with a wink at the wellness girlies.",
+      "why": "Her winter-melon 'depuffing since age 3' post is already the hook; trend-hijack angle."
+    },
+    {
+      "title": "Rating my grandma's reaction to my cooking",
+      "hook": "Reaction format: grandma is the star, Melanie is the straight man.",
+      "why": "Family-reaction videos travel; grandma content is already her audience's favorite."
+    }
+  ],
+  "trends": [
+    {
+      "date": "2026-09-22",
+      "items": [
+        {
+          "label": "'Jayden' mixed English-Cantonese mum trend goes mega-viral in HK; brands trendjack it",
+          "url": "https://www.marketing-interactive.com/hk-brands-trendjack-jayden-reels-mocking-mixed-english-cantonese-mum-talk",
+          "note": "Matthew (@matthewpwj_) + Janice (@janicewanwan) reels mocking mums who force English into Cantonese sentences. Millions of views."
+        },
+        {
+          "label": "Steven He 'parents compare you to your cousin' skit (~310K likes)",
+          "url": "https://www.instagram.com/reel/DYDGyewkna3/",
+          "note": "Two-role parent-comparison format still dominating."
+        },
+        {
+          "label": "Jimmy O. Yang Cantonese-cussing stand-up clip circulating",
+          "url": "https://www.instagram.com/reel/DYnyNWrJ61a/",
+          "note": "Language-humor proof point: 'Cantonese is the most fun language to cuss in.'"
+        }
+      ]
+    }
+  ]
+}
